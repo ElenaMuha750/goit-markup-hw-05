@@ -16,6 +16,7 @@
   --accent-color: #2196f3;
   --hover-button: #188ce8;
   --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-duration: 250ms;
 }
 
 body {
@@ -106,7 +107,7 @@ img {
 }
 
 .header-link {
-  transition: color 250ms var(--timing-function);
+  transition: color var(--transition-duration) var(--timing-function);
 }
 
 .header-list .header-item:not(:last-child) {
@@ -189,7 +190,7 @@ img {
 }
 
 .contact-link {
-  transition: color 250ms var(--timing-function);
+  transition: color var(--transition-duration) var(--timing-function);
 }
 
 /* --------------------Hero---------------------- */
@@ -235,7 +236,7 @@ img {
   cursor: pointer;
   text-align: center;
 
-  transition: background-color 250ms var(--timing-function);
+  transition: background-color var(--transition-duration) var(--timing-function);
 }
 
 .button:hover,
@@ -418,12 +419,12 @@ img {
   background-color: var(--primary-white-color);
   border-radius: 50%;
 
-  transition: background-color 250ms var(--timing-function);
+  transition: background-color var(--transition-duration) var(--timing-function);
 }
 
 .staff-soc-icon {
   fill: #afb1b8;
-  transition: fill 250ms var(--timing-function);
+  transition: fill var(--transition-duration) var(--timing-function);
 }
 
 .staff-soc-link:hover,
@@ -469,7 +470,7 @@ img {
 
 .clients-icon {
   fill: #afb1b8;
-  transition: fill 250ms var(--timing-function);
+  transition: fill var(--transition-duration) var(--timing-function);
 }
 
 .clients-link:hover,
@@ -509,7 +510,7 @@ img {
   letter-spacing: 0.03em;
   color: var(--primary-white-color);
   font-style: normal;
-  transition: color 250ms var(--timing-function);
+  transition: color var(--transition-duration) var(--timing-function);
 }
 
 .footer-adress:hover,
@@ -522,7 +523,7 @@ img {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
   font-style: normal;
-  transition: color 250ms var(--timing-function);
+  transition: color var(--transition-duration) var(--timing-function);
 }
 
 .footer-contact:hover,
@@ -560,7 +561,7 @@ img {
   height: 44px;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
-  transition: background-color 250ms var(--timing-function);
+  transition: background-color var(--transition-duration) var(--timing-function);
 }
 
 .footer-soc-icon {
@@ -592,8 +593,9 @@ img {
   letter-spacing: 0.03em;
   cursor: pointer;
   text-align: center;
-  transition: background-color 250ms var(--timing-function), color 250ms var(--timing-function),
-    box-shadow 250ms var(--timing-function);
+  transition: background-color var(--transition-duration) var(--timing-function),
+    color var(--transition-duration) var(--timing-function),
+    box-shadow var(--transition-duration) var(--timing-function);
 }
 
 .portfolio-btn:hover,
@@ -632,7 +634,7 @@ img {
   margin-top: 30px;
   width: 370px;
   height: 404px;
-  transition: box-shadow 250ms var(--timing-function);
+  transition: box-shadow var(--transition-duration) var(--timing-function);
 }
 
 .portfolio-item:hover,
@@ -664,7 +666,7 @@ img {
   color: #ffffff;
 
   transform: translateY(101%);
-  transition: transform 250ms var(--timing-function);
+  transition: transform var(--transition-duration) var(--timing-function);
 }
 
 .text-box {
@@ -724,6 +726,8 @@ img {
   height: 581px;
   background-color: var(--primary-white-color);
   border-radius: 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
 
   transform: scale(1);
   transition: transform 300ms var(--timing-function);
