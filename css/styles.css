@@ -15,6 +15,7 @@
   --secondary-bcg-color: #f5f4fa;
   --accent-color: #2196f3;
   --hover-button: #188ce8;
+  --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body {
@@ -104,6 +105,10 @@ img {
   margin-left: 93px;
 }
 
+.header-link {
+  transition: color 250ms var(--timing-function);
+}
+
 .header-list .header-item:not(:last-child) {
   margin-right: 50px;
 }
@@ -183,6 +188,10 @@ img {
   fill: var(--accent-color);
 }
 
+.contact-link {
+  transition: color 250ms var(--timing-function);
+}
+
 /* --------------------Hero---------------------- */
 
 .hero {
@@ -225,6 +234,8 @@ img {
   letter-spacing: 0.06em;
   cursor: pointer;
   text-align: center;
+
+  transition: background-color 250ms var(--timing-function);
 }
 
 .button:hover,
@@ -406,10 +417,13 @@ img {
   height: 44px;
   background-color: var(--primary-white-color);
   border-radius: 50%;
+
+  transition: background-color 250ms var(--timing-function);
 }
 
 .staff-soc-icon {
   fill: #afb1b8;
+  transition: fill 250ms var(--timing-function);
 }
 
 .staff-soc-link:hover,
@@ -455,6 +469,7 @@ img {
 
 .clients-icon {
   fill: #afb1b8;
+  transition: fill 250ms var(--timing-function);
 }
 
 .clients-link:hover,
@@ -467,7 +482,7 @@ img {
   fill: var(--accent-color);
 }
 
-/* ---------------------Footer------------------ */
+/* -----------------Footer------------- */
 
 .footer {
   background-color: #2f303a;
@@ -494,6 +509,7 @@ img {
   letter-spacing: 0.03em;
   color: var(--primary-white-color);
   font-style: normal;
+  transition: color 250ms var(--timing-function);
 }
 
 .footer-adress:hover,
@@ -506,6 +522,7 @@ img {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
   font-style: normal;
+  transition: color 250ms var(--timing-function);
 }
 
 .footer-contact:hover,
@@ -543,6 +560,7 @@ img {
   height: 44px;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
+  transition: background-color 250ms var(--timing-function);
 }
 
 .footer-soc-icon {
@@ -554,7 +572,7 @@ img {
   background-color: var(--accent-color);
 }
 
-/* ----------------Портфолио -----------------*/
+/* -------------Портфолио--------------*/
 
 .portfolio {
   padding: 94px 0;
@@ -574,6 +592,8 @@ img {
   letter-spacing: 0.03em;
   cursor: pointer;
   text-align: center;
+  transition: background-color 250ms var(--timing-function), color 250ms var(--timing-function),
+    box-shadow 250ms var(--timing-function);
 }
 
 .portfolio-btn:hover,
@@ -612,6 +632,7 @@ img {
   margin-top: 30px;
   width: 370px;
   height: 404px;
+  transition: box-shadow 250ms var(--timing-function);
 }
 
 .portfolio-item:hover,
@@ -643,7 +664,7 @@ img {
   color: #ffffff;
 
   transform: translateY(100%);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms var(--timing-function);
 }
 
 .text-box {
