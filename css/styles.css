@@ -707,7 +707,7 @@ img {
   justify-content: center;
 
   opacity: 1;
-  transition: opacity var(--transition-duration) cubic-bezier(0.4, 0, 0.2, 1),
+  transition: opacity var(--transition-duration) var(--timing-function),
     visibility var(--transition-duration);
 }
 
